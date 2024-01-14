@@ -6,7 +6,6 @@ This Go package, named `questions`, provides functionality for handling various 
 
 ## Functions
 
-### 1. SortWords
 
 ```go
 // SortWords sorts a slice of strings in descending order based on the number of occurrences of the letter 'A' in each word.
