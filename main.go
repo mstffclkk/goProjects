@@ -22,4 +22,5 @@ func main() {
 	data := []string{"apple", "pie", "apple", "red", "red", "red"}
 	fmt.Println(questions.MostRepeated(data))
 	fmt.Println()
+
 }
