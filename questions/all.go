@@ -13,7 +13,12 @@ func countA(word string) int {
 
 func SortWords(words []string) []string {
 	sort.Slice(words, func(i, j int) bool {
-		return countA(words[i]) > countA(words[j])
+		countA1 := countA(words[i])
+		countA2 := countA(words[j])
+		if countA1 == countA2 {
+			return len(words[j]) < len(words[i])
+		}
+		return countA1 > countA2
 	})
 
 	return words
